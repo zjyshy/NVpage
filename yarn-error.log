@@ -1,0 +1,47 @@
+Arguments: 
+  D:\Node.js\node.exe D:\Software\Yarn\bin\yarn.js build
+
+PATH: 
+  D:\Software\cmder\vendor\git-for-windows\mingw64\bin;D:\Software\cmder\vendor\git-for-windows\usr\bin;C:\Users\cswr\bin;C:\Users\cswr\AppData\Roaming\npm\node_modules\hexo-cli\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;D:\Git\cmd;D:\Node.js;D:\Software\Yarn\bin;C:\Users\cswr\AppData\Local\Programs\Python\Python38\Scripts;C:\Users\cswr\AppData\Local\Programs\Python\Python38;C:\Users\cswr\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\cswr\AppData\Roaming\npm;C:\Users\cswr\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.16.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: D:\project\nv\package.json: Unexpected token { in JSON at position 94
+      at JSON.parse (<anonymous>)
+      at D:\Software\Yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (D:\Software\Yarn\lib\cli.js:310:30)
+      at D:\Software\Yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "scripts": {
+      "build":"parcel build src/index.html --no-minify --public-url ./"
+    }
+  }
+  
+  {
+    "devDependencies": {
+      "cssnano": "^4.1.10"
+    },
+    "name": "nv",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:zjyshy/NVpage.git",
+    "author": "szx <1245836222@qq.com>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
