@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <link rel="icon" href="img/jiumi.png" sizes="32x32">
+  <script src="//at.alicdn.com/t/font_1859200_v85qfxa4dqf.js"></script>
+  <script src="//at.alicdn.com/t/font_1817093_6dc2bnt845.js"></script>
+  <style type="text/css">
+    .icon {
+      width: 1em;
+      height: 1em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+
+  <title>啾咪-导航网站</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="globalHeader">
+      <div class="logo">
+        <img src="./img/jiumi.png" alt="">
+      </div>
+
+      <form action="https://www.baidu.com/s" method="get">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-search"></use>
+        </svg>
+
+
+        <input name="wd" type="text" class="searchBox">
+
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-mich-copy"></use>
+        </svg>
+
+        <div class="but">
+          <button type="submit" class="searchButton">Baidu search</button>
+          <button>随便看看</button>
+        </div>
+      </form>
+    </header>
+
+
+
+    <main class="globalMain">
+      <ul class="siteList">
+
+        <li class="addSiteWrapper">
+          <div class="addSite">
+            <div class="logo"><svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-add"></use>
+              </svg></div>
+            <div class="newSite">新增网站</div>
+          </div>
+        </li>
+      </ul>
+    </main>
+  </div>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>

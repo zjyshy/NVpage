@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  padding-top: 180px;
+}
+.globalHeader .logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.globalHeader .logo img {
+  width: 200px;
+}
+.globalHeader > form {
+  position: relative;
+  max-width: 582px;
+  min-width: 280px;
+  height: 39px;
+  border: 1px solid #dfe1e5;
+  border-radius: 20px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+.globalHeader form:hover {
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+.globalHeader input {
+  width: 80%;
+  height: 100%;
+  border: none;
+  outline: none;
+  margin: 0 40px;
+  box-sizing: border-box;
+}
+.globalHeader svg {
+  position: absolute;
+}
+.globalHeader form svg:nth-child(1) {
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #999;
+  cursor: pointer;
+}
+.globalHeader form svg:nth-child(3) {
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.but {
+  margin: 30px auto;
+  text-align: center;
+  min-width: 281px;
+}
+.but button {
+  border: none;
+  color: #666;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.but button:hover {
+  color: #000;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #c6c6c6;
+}
+
+.globalMain {
+  max-width: 573px;
+  margin: 0 auto;
+}
+.siteList {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 20px;
+}
+
+.siteList > li {
+  width: 112px;
+  height: 112px;
+  margin: 20px 20px 0 0;
+  position: relative;
+  border-radius: 5px;
+}
+.siteList > li:hover {
+  background-color: rgba(32, 33, 36, 0.06);
+}
+
+.deleteSite {
+  position: absolute;
+  display: none;
+  right: 5px;
+  top: 0;
+}
+
+.siteList .site {
+  padding-top: 10px;
+  margin: 0 auto;
+}
+.siteList > li:hover .deleteSite {
+  display: block;
+}
+.siteList .logo {
+  height: 48px;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  background-color: rgba(32, 33, 36, 0.1);
+}
+.siteList .logo img {
+  width: 22px;
+  text-align: center;
+}
+
+.siteList .link,
+.newSite {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 13px;
+}
+
+.siteList .addSite {
+  padding: 10px;
+}
+
+.addSite .logo .icon {
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+}
+
+.addSite .logo .icon:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 800px) {
+  .globalHeader .logo {
+    margin-top: 10px;
+  }
+  .wrapper {
+    height: 0;
+    padding-top: 0;
+  }
+  .globalHeader > form {
+    width: 80%;
+  }
+  .deleteSite {
+    display: block;
+  }
+  .siteList {
+    justify-content: space-between;
+  }
+}
